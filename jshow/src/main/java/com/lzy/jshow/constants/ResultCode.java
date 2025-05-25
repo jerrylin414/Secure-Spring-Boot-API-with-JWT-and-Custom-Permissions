@@ -1,0 +1,58 @@
+package com.lzy.jshow.constants;
+
+public enum ResultCode {
+
+	SUCCESS("SUCCESS", "0")
+	
+	, REQUEST_ERROR("REQUEST ERROR", "40000")
+	
+	, REQUEST_NOT_ACCEPT("REQUEST NOT ACCEPT", "40009")
+	
+	, OPERATION_FAIL("OPERATION FAIL", "40010")
+
+	, RESULT_ACCESS_DENIED("ACCESS UNAUTHORIZED", "40011")
+	
+	, REQUEST_NOT_VERIFIED("REQUEST EXIST", "40012")
+
+	, REQUEST_EXIST("REQUEST EXIST", "40013")
+	
+	, REQUEST_TOO_MANY("REQUEST TOO MANY TIMES", "40014")
+	
+	, TOO_FREQUENT_OPERATION("TOO FREQUENT OPERATION", "40015")
+	
+	, RESULT_TIMEOUT("RESULT TIMEOUT", "40016")
+	
+	, REQUEST_REJECT("REQUEST REJECT", "40017")
+	
+	, DATA_DUPLICATE("DATA DUPLICATE", "40018")
+	
+	, DATA_INVALID("DATA INVALID", "40019")
+	
+	, REQUEST_NOT_EXIST("REQUEST NOT EXIST", "40020")
+	
+	, USER_SSO_ERROR("USER SSO ERROR", "40021")
+	
+	, RESULT_NOT_ACCEPT("SERVER NOT ACCEPT REQUEST", "40022")
+	
+	, USER_NO_ACCESS_RIGHT_ERROR("USER NO ACCESS RIGHT", "40023")
+	
+	, PARAMETER_INVALID("PARAMETER INVALID", "40024")
+	;
+
+	private String msg;
+	
+	private String code;
+	
+	private ResultCode(String msg, String code){
+		this.msg = msg;
+		this.code = code;
+	}
+	
+	public String code(){
+		return code;
+	}
+	
+	public String msg(){
+		return msg;
+	}
+}
