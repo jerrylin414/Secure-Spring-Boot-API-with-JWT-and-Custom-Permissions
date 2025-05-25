@@ -30,7 +30,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.List;
 
-//Filter to login service
 @Component
 public class JwtFilter extends OncePerRequestFilter {
     @Autowired
